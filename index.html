@@ -1,306 +1,89 @@
 <!doctype html>
-<html lang="en">
+<html lang="zh-CN">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Portfolio of Zixiang Zeng — hospitality student, student organizer, and AI-assisted web and visual creator in Hainan." />
-    <meta name="theme-color" content="#edf7fc" />
-    <title>Zixiang Zeng · Portfolio</title>
+    <meta name="description" content="曾子翔的本科生科研助理申请网站，呈现学业基础、英文能力、资料与数据处理、规范写作和团队协作证据。" />
+    <meta name="theme-color" content="#f7fbfd" />
+    <title>曾子翔｜本科生科研助理申请</title>
     <link rel="stylesheet" href="styles.css" />
     <script src="app.js" defer></script>
   </head>
   <body>
-    <a class="skip-link" href="#about">Skip to content</a>
-    <div class="horizon" aria-hidden="true">
-      <span></span><span></span><span></span>
-    </div>
-
+    <a class="skip-link" href="#profile" data-i18n="a11y.skip">跳到主要内容</a>
     <header class="site-header">
-      <a class="monogram" href="#about" aria-label="Back to top">
-        <svg viewBox="0 0 52 52" role="img" aria-hidden="true">
-          <path d="M7 34c7-9 13-12 19-8s11 2 19-7" />
-          <path d="M9 41c8-7 14-9 20-5s10 2 15-2" />
-          <circle cx="35" cy="15" r="4" />
-        </svg>
+      <a class="site-mark" href="#profile" aria-label="返回顶部">
+        <svg viewBox="0 0 54 42" role="img" aria-hidden="true"><path d="M3 31c8-8 14-10 21-6 7 4 13 3 27-9" /><path d="M6 38c9-6 15-7 22-3 6 3 11 2 19-3" /><circle cx="38" cy="9" r="4" /></svg>
       </a>
-      <nav aria-label="Primary navigation">
-        <a href="#about" data-i18n="nav.about">About</a>
-        <a href="#news" data-i18n="nav.news">News</a>
-        <a href="#education" data-i18n="nav.education">Education</a>
-        <a href="#projects" data-i18n="nav.projects">Projects</a>
-        <a href="#experience" data-i18n="nav.experience">Experience</a>
-        <button class="language-toggle" type="button" aria-label="Switch to Chinese">
-          <span class="language-current">EN</span><span aria-hidden="true">/</span><span>中文</span>
-        </button>
+      <nav aria-label="主导航">
+        <a href="#fit" data-i18n="nav.fit">岗位匹配</a><a href="#support" data-i18n="nav.support">科研支持</a><a href="#practice" data-i18n="nav.practice">实践经历</a><a href="#education" data-i18n="nav.education">教育与荣誉</a>
+        <button class="language-toggle" type="button" aria-label="Switch to English"><span class="language-current">中</span><span aria-hidden="true">/</span><span>EN</span></button>
       </nav>
     </header>
-
     <main class="page-shell">
-      <aside class="profile" aria-label="Profile">
-        <div class="portrait-wrap">
-          <img src="assets/portrait.jpg" alt="Portrait of Zixiang Zeng" />
-          <span class="portrait-index" aria-hidden="true">01</span>
-        </div>
-        <p class="profile-kicker" data-i18n="profile.kicker">Hospitality · Culture · Digital</p>
-        <h1>Zixiang Zeng <span>曾子翔</span></h1>
-        <div class="profile-roles">
-          <p data-i18n="profile.role1">Hotel Management Undergraduate</p>
-          <p data-i18n="profile.role2">Student Organizer</p>
-          <p data-i18n="profile.role3">AI-assisted Web & Visual Creator</p>
-          <p data-i18n="profile.role4">Hainan Observer</p>
-        </div>
-
-        <div class="contact-block">
-          <a href="mailto:zzeng129@asu.edu">zzeng129@asu.edu</a>
-          <a href="https://github.com/zengzixiang849-collab" target="_blank" rel="noreferrer">GitHub ↗</a>
-        </div>
-
-        <div class="skill-block">
-          <p class="small-label" data-i18n="profile.skills">Skills & tools</p>
-          <div class="skill-list" aria-label="Skills">
-            <span>Web Design</span><span>Video Editing</span><span>Codex</span>
-            <span>WorkBuddy</span><span>DeepSeek Hardness</span>
-            <span>AI-assisted Three.js</span><span>AI-assisted Blender</span>
-          </div>
-        </div>
-
-        <a class="profile-cta" href="#projects">
-          <span data-i18n="profile.cta">View selected work</span><span aria-hidden="true">↓</span>
-        </a>
-        <p class="updated" data-i18n="profile.updated">Last updated · Nov 2026</p>
+      <aside class="profile-rail" aria-label="个人申请档案">
+        <figure class="portrait"><img src="assets/portrait.jpg" alt="曾子翔证件照" /><figcaption data-i18n="profile.status">本科生科研助理申请人</figcaption></figure>
+        <div class="identity"><p class="discipline" data-i18n="profile.discipline">旅游发展与管理</p><h1>曾子翔 <span>Zixiang Zeng</span></h1><p data-i18n="profile.role">旅游发展与管理专业本科生</p><p data-i18n="profile.applicant">本科生科研助理申请人</p></div>
+        <dl class="quick-evidence">
+          <div><dt data-i18n="profile.rankLabel">专业排名</dt><dd>7 / 104</dd></div><div><dt data-i18n="profile.topLabel">排名区间</dt><dd data-i18n="profile.topValue">前约 7%</dd></div><div><dt data-i18n="profile.rateLabel">课程优秀率</dt><dd>64.36%</dd></div><div><dt data-i18n="profile.englishLabel">英语能力</dt><dd>CET-4 586<br />CET-6 469</dd></div>
+        </dl>
+        <div class="contact-list"><a href="mailto:zzeng129@asu.edu">zzeng129@asu.edu</a><a href="https://github.com/zengzixiang849-collab" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a></div>
+        <div class="capabilities"><p data-i18n="profile.capabilityLabel">可支持的基础工作</p><ul><li data-i18n="profile.capability1">资料检索与整理</li><li data-i18n="profile.capability2">数据录入与交叉核对</li><li data-i18n="profile.capability3">中英文材料阅读</li><li data-i18n="profile.capability4">规范写作与版本管理</li><li data-i18n="profile.capability5">访谈、活动与团队协作支持</li></ul></div>
+        <a class="cv-state" href="files/Zixiang-Zeng-Research-Assistant-CV-Public-ZH.pdf" target="_blank"><span data-i18n="profile.cv">查看公开安全版中文简历</span> <span aria-hidden="true">↗</span></a><p class="updated" data-i18n="profile.updated">资料更新于 2026 年 11 月</p>
       </aside>
-
-      <div class="content-column">
+      <div class="narrative">
+        <section id="profile" class="section application-intro">
+          <div class="section-title"><p data-i18n="sections.profileKicker">个人资料与申请目标</p><h2 data-i18n="sections.profile">从可靠的基础工作开始，接受系统科研训练。</h2></div>
+          <p class="intro-lead" data-i18n="intro.lead">我希望申请本科生科研助理岗位，从资料搜集、数据核对、文献与材料整理、规范写作和团队协作等基础任务开始，逐步建立严谨、可复核的研究工作习惯。</p>
+          <div class="application-note"><p data-i18n="intro.noteTitle">我能带来的不是被包装成“科研成果”的项目，而是已经在课程、公共机构、校园项目和跨文化服务中反复练习过的工作方式。</p><ul><li data-i18n="intro.note1">按统一规则整理材料，保留来源与版本。</li><li data-i18n="intro.note2">对表格、数字和表述进行二次核对。</li><li data-i18n="intro.note3">在中英文语境之间保持信息准确和表达清楚。</li></ul></div>
+        </section>
         <section id="about" class="section about-section">
-          <div class="section-heading">
-            <span>01</span><h2 data-i18n="sections.about">About</h2>
-          </div>
-          <p class="about-lead" data-i18n="about.lead">I study hospitality as a way of understanding people, places, and the experiences that connect them.</p>
-          <div class="about-copy">
-            <p data-i18n="about.p1">I am a Hotel Management undergraduate in the Tourism Development and Management track at the Hainan University–Arizona State University Joint International Tourism College, Class of 2029.</p>
-            <p data-i18n="about.p2">My work moves between student leadership, local cultural observation, and AI-assisted web and visual creation. I enjoy turning an idea into something people can actually enter, use, and remember.</p>
-            <p data-i18n="about.p3">Currently in Haikou, I am continuing SPARC, mentoring first-year students through U-First, and documenting Hainan through small digital experiments.</p>
-          </div>
-          <figure class="campus-image">
-            <img src="assets/library.jpg" alt="Yi Library at Hainan University Mission Hills Campus" />
-            <figcaption>
-              <span data-i18n="about.imageCaption">Yi Library · Hainan University Mission Hills Campus</span>
-              <span data-i18n="about.imageCredit">Photographed by Zixiang</span>
-            </figcaption>
-          </figure>
+          <div class="section-title compact"><p data-i18n="sections.aboutKicker">关于我</p><h2 data-i18n="sections.about">旅游与酒店管理训练，连接文化解释、公共服务与数字工具。</h2></div>
+          <div class="about-columns"><p data-i18n="about.p1">我就读于海南大学—亚利桑那州立大学联合国际旅游学院。海南大学学籍专业为酒店管理（中外合作办学），ASU 学习方向为 Tourism Development and Management (TDM)。</p><p data-i18n="about.p2">课程学习让我关注旅游体验、组织运行和文化沟通；RAISE Hub、公共卫生机构实践与校园服务则让我进一步理解准确记录、规范表达、保密意识和团队协作的重要性。</p></div>
+          <blockquote data-i18n="about.quote">我希望把“做得快”进一步训练成“做得准确、留有依据、能够复查”。</blockquote>
         </section>
-
-        <section id="news" class="section">
-          <div class="section-heading">
-            <span>02</span><h2 data-i18n="sections.news">News</h2>
-          </div>
-          <ol class="timeline news-timeline">
-            <li>
-              <time>2026.10</time>
-              <p data-i18n="news.n1">Began serving as a U-First Student Mentor for the Happiness cohort, supporting a seven-week transition and learning program.</p>
-            </li>
-            <li>
-              <time>2026.10</time>
-              <p data-i18n="news.n2">Published new iterations of Stillwater and Century Light, two web-based experiments in personal archives and urban observation.</p>
-            </li>
-            <li>
-              <time>2026.10</time>
-              <p data-i18n="news.n3">Returned to Qilou Old Street during the National Day period as an English-speaking volunteer guide.</p>
-            </li>
-            <li>
-              <time>2026.09</time>
-              <p data-i18n="news.n4">Co-led SPARC's first campus event: a mindfulness welcome session for eight participants.</p>
-            </li>
-            <li>
-              <time>2026.06</time>
-              <p data-i18n="news.n5">Joined English-language volunteer service at Haikou Qilou Old Street.</p>
-            </li>
-            <li>
-              <time>2026.04</time>
-              <p data-i18n="news.n6">Completed Red Cross first-aid training and received First Aid and CPR+AED certificates.</p>
-            </li>
-          </ol>
-        </section>
-
-        <section id="education" class="section">
-          <div class="section-heading">
-            <span>03</span><h2 data-i18n="sections.education">Education</h2>
-          </div>
-          <article class="education-block">
-            <div class="education-meta">
-              <time>2025.09 — 2029.06</time>
-              <span data-i18n="education.place">Haikou, China</span>
-            </div>
-            <h3 data-i18n="education.school">Hainan University–Arizona State University Joint International Tourism College</h3>
-            <p class="degree" data-i18n="education.degree">Bachelor of Management in Hotel Management · Tourism Development and Management Track</p>
-            <div class="education-grid">
-              <div>
-                <p class="small-label" data-i18n="education.courseLabel">Selected A-grade coursework</p>
-                <ul class="plain-list">
-                  <li data-i18n="education.course1">Principles of Management</li>
-                  <li data-i18n="education.course2">Advanced Mathematics</li>
-                  <li data-i18n="education.course3">Introduction to Environmental Science</li>
-                </ul>
-              </div>
-              <div>
-                <p class="small-label" data-i18n="education.highlightLabel">Highlights</p>
-                <ul class="plain-list">
-                  <li data-i18n="education.highlight1">CET-4 · 586</li>
-                  <li data-i18n="education.highlight2">ASU EUGA Certificate</li>
-                  <li data-i18n="education.highlight3">Letter-grade academic system</li>
-                </ul>
-              </div>
-            </div>
-          </article>
-        </section>
-
-        <section id="projects" class="section">
-          <div class="section-heading">
-            <span>04</span><h2 data-i18n="sections.projects">Selected Projects</h2>
-          </div>
-          <div class="project-list">
-            <article class="project project-featured">
-              <a class="project-image" href="https://zengzixiang849-collab.github.io/zen-stillwater/" target="_blank" rel="noreferrer">
-                <img src="assets/stillwater.png" alt="Stillwater website interface" />
-              </a>
-              <div class="project-copy">
-                <div class="project-meta"><span>Web Archive</span><time>2026.10</time></div>
-                <h3>Stillwater</h3>
-                <p data-i18n="projects.stillwater">An evolving personal archive for learning, reflection, and visual experiments—designed as a quiet place to keep ideas in motion.</p>
-                <div class="tag-row"><span>Web Design</span><span>Personal Archive</span><span>AI-assisted</span></div>
-                <a class="text-link" href="https://zengzixiang849-collab.github.io/zen-stillwater/" target="_blank" rel="noreferrer"><span data-i18n="common.openProject">Open project</span> ↗</a>
-              </div>
-            </article>
-
-            <article class="project">
-              <a class="project-image" href="https://zengzixiang849-collab.github.io/zen-stillwater/century-bridge/" target="_blank" rel="noreferrer">
-                <img src="assets/century-light.jpg" alt="Century Light project poster" />
-              </a>
-              <div class="project-copy">
-                <div class="project-meta"><span>Urban Observation</span><time>2026.10</time></div>
-                <h3>Century Light</h3>
-                <p data-i18n="projects.century">A daylight study of Haikou Century Bridge. Time, weather, and color become a small interactive portrait of the city.</p>
-                <div class="tag-row"><span>Haikou</span><span>Interactive</span><span>Visual Study</span></div>
-                <a class="text-link" href="https://zengzixiang849-collab.github.io/zen-stillwater/century-bridge/" target="_blank" rel="noreferrer"><span data-i18n="common.openProject">Open project</span> ↗</a>
-              </div>
-            </article>
-
-            <article class="project">
-              <div class="project-image"><img src="assets/minimal-desk.png" alt="Minimal Desk interactive portfolio preview" /></div>
-              <div class="project-copy">
-                <div class="project-meta"><span>3D Portfolio</span><time>2026.09</time></div>
-                <h3>Minimal Desk</h3>
-                <p data-i18n="projects.desk">An interactive 3D workbench that turns a personal portfolio into a space to explore, using AI-assisted Three.js and Blender workflows.</p>
-                <div class="tag-row"><span>Three.js</span><span>Blender</span><span>Spatial UI</span></div>
-              </div>
-            </article>
-
-            <article class="project culture-project">
-              <div class="project-image project-title-card" aria-label="Culture Arcade project graphic">
-                <span>CULTURE</span><strong>ARCADE</strong><small>Festival concept</small>
-              </div>
-              <div class="project-copy">
-                <div class="project-meta"><span>Cultural Festival</span><time>2026</time></div>
-                <h3>Culture Arcade</h3>
-                <p data-i18n="projects.culture">An independent cultural-festival proposal exploring how activities, shared space, and student participation can make cultural exchange more immediate and playful.</p>
-                <div class="tag-row"><span>Event Concept</span><span>Culture</span><span>Experience Design</span></div>
-              </div>
-            </article>
-
-            <article class="project initiative-project">
-              <div class="project-image"><img src="assets/sparc-event.jpg" alt="SPARC Mindfulness Welcome Event classroom" /></div>
-              <div class="project-copy">
-                <div class="project-meta"><span>Student Initiative</span><time>2026.09</time></div>
-                <h3>SPARC Mindfulness Welcome</h3>
-                <p data-i18n="projects.sparc">SPARC's first campus gathering: an intimate mindfulness session for eight participants, planned from invitation and program flow to hosting, music, meditation, and on-site coordination.</p>
-                <div class="tag-row"><span>Event Design</span><span>Hosting</span><span>Wellbeing</span></div>
-              </div>
-            </article>
+        <section id="fit" class="section fit-section">
+          <div class="section-title compact"><p data-i18n="sections.fitKicker">岗位要求与个人证据</p><h2 data-i18n="sections.fit">把岗位要求逐项对应到已经发生的经历。</h2></div>
+          <div class="evidence-matrix" role="table" aria-label="科研助理岗位要求与个人证据匹配矩阵">
+            <div class="matrix-head" role="row"><span role="columnheader" data-i18n="matrix.requirement">岗位要求</span><span role="columnheader" data-i18n="matrix.evidence">已有证据</span><span role="columnheader" data-i18n="matrix.support">可支持的科研工作</span></div>
+            <div class="matrix-row" role="row"><strong role="cell" data-i18n="matrix.r1">稳定的学业基础</strong><p role="cell" data-i18n="matrix.e1">专业排名 7/104（前约 7%）；课程优秀率 64.36%；三好学生与综合二等奖学金。</p><p role="cell" data-i18n="matrix.s1">按计划完成阅读、课程背景梳理和研究基础训练。</p></div>
+            <div class="matrix-row" role="row"><strong role="cell" data-i18n="matrix.r2">英文资料处理</strong><p role="cell" data-i18n="matrix.e2">CET-4 586、CET-6 469；骑楼老街英语讲解；双语学习环境。</p><p role="cell" data-i18n="matrix.s2">英文文献初筛、术语核对、摘要整理与跨文化表达。</p></div>
+            <div class="matrix-row" role="row"><strong role="cell" data-i18n="matrix.r3">资料与数据准确性</strong><p role="cell" data-i18n="matrix.e3">南京市溧水区疾控中心资料实践；GATSBY 商赛中参与财务模型和团队交付。</p><p role="cell" data-i18n="matrix.s3">数据录入、表格复核、字段一致性检查和基础清洗。</p></div>
+            <div class="matrix-row" role="row"><strong role="cell" data-i18n="matrix.r4">规范写作与归档</strong><p role="cell" data-i18n="matrix.e4">参与 RAISE Hub 材料整理、网页内容核对和双语表达校对。</p><p role="cell" data-i18n="matrix.s4">研究日志、材料命名、来源记录、版本管理和格式统一。</p></div>
+            <div class="matrix-row" role="row"><strong role="cell" data-i18n="matrix.r5">沟通与团队执行</strong><p role="cell" data-i18n="matrix.e5">U-First Mentor、骑楼志愿讲解、RAISE Hub 与学生组织协作。</p><p role="cell" data-i18n="matrix.s5">会议与活动支持、任务跟进、访谈协调和团队沟通。</p></div>
           </div>
         </section>
-
-        <section id="experience" class="section">
-          <div class="section-heading">
-            <span>05</span><h2 data-i18n="sections.experience">Experience</h2>
-          </div>
-          <div class="experience-list">
-            <article class="experience-item">
-              <div class="experience-date">2026.09 — <span data-i18n="common.present">Present</span></div>
-              <div>
-                <p class="experience-org">SPARC · Arizona State University</p>
-                <h3 data-i18n="experience.sparcRole">Co-lead Coordinator · Initiator & Core Organizer</h3>
-                <p data-i18n="experience.sparcBody">Continuing the chapter brought from ASU and shaping its local direction. Co-led the first event from professor invitation and program design through publicity, hosting, music, meditation, and on-site delivery.</p>
-              </div>
-              <img src="assets/sparc-host.jpg" alt="SPARC event hosting setup" />
-            </article>
-
-            <article class="experience-item">
-              <div class="experience-date">2026.10 — 2026.12</div>
-              <div>
-                <p class="experience-org">U-First · Happiness Cohort</p>
-                <h3 data-i18n="experience.ufirstRole">Student Mentor</h3>
-                <p data-i18n="experience.ufirstBody">Supported a seven-week first-year program through student communication, attendance and roster coordination, activity organization, team building, on-site guidance, and faculty communication.</p>
-              </div>
-              <img src="assets/ufirst-haic.jpg" alt="HAIC Nature and the Human Spirit program graphic" />
-            </article>
-
-            <article class="experience-item">
-              <div class="experience-date">2026.06 & 2026.10</div>
-              <div>
-                <p class="experience-org" data-i18n="experience.qilouOrg">Qilou Old Street · Longhua District</p>
-                <h3 data-i18n="experience.qilouRole">English-speaking Volunteer Guide</h3>
-                <p data-i18n="experience.qilouBody">Provided English interpretation and visitor guidance in Haikou's historic Qilou Old Street, helping international visitors connect with the district and its local context.</p>
-              </div>
-              <img src="assets/qilou-volunteer.jpg" alt="English volunteer service at Qilou Old Street" />
-            </article>
-          </div>
+        <section id="support" class="section support-section">
+          <div class="section-title compact"><p data-i18n="sections.supportKicker">科研支持与资料处理</p><h2 data-i18n="sections.support">对准确性、来源和交付负责。</h2></div>
+          <article class="experience-line featured-line" data-experience="raise"><div class="experience-meta"><time>2026</time><span>RAISE Hub</span></div><div class="experience-body"><h3 data-i18n="support.raiseTitle">Responsible AI Support in Education</h3><p data-i18n="support.raiseBody">参与教学与学习支持材料的整理、网页内容核对、活动资料归档与双语表达校对。工作重点是让信息结构清楚、来源可追溯，并在不同版本之间保持一致。</p><ul class="task-list"><li data-i18n="support.raiseTask1">按主题与用途整理材料，核对标题、文件与页面内容。</li><li data-i18n="support.raiseTask2">在中英文内容之间检查术语、语气和事实一致性。</li><li data-i18n="support.raiseTask3">协助把复杂材料转化为可阅读、可复查的公开结构。</li></ul></div></article>
+          <article class="experience-line" data-experience="cdc"><div class="experience-meta"><time>2026</time><span data-i18n="support.cdcOrg">南京市溧水区疾病预防控制中心</span></div><div class="experience-body"><h3 data-i18n="support.cdcTitle">公共卫生资料与数据实践</h3><p data-i18n="support.cdcBody">在公共卫生机构环境中接触资料整理、数据核对与规范文档处理，理解准确性、保密意识和按流程交付对公共机构工作的意义。</p></div></article>
         </section>
-
-        <section id="certificates" class="section">
-          <div class="section-heading">
-            <span>06</span><h2 data-i18n="sections.certificates">Certificates & Highlights</h2>
-          </div>
-          <div class="certificate-layout">
-            <figure>
-              <img src="assets/first-aid.jpg" alt="CPR and AED first-aid training" />
-              <figcaption data-i18n="certificates.caption">First-aid practical training · 2026.04</figcaption>
-            </figure>
-            <ul class="certificate-list">
-              <li><span>2026.04</span><div><strong data-i18n="certificates.firstAid">Red Cross First Aid Certificate</strong><small data-i18n="certificates.redCross">Haikou Red Cross</small></div></li>
-              <li><span>2026.04</span><div><strong data-i18n="certificates.cpr">CPR + AED Certificate</strong><small data-i18n="certificates.redCross">Haikou Red Cross</small></div></li>
-              <li><span>586</span><div><strong>CET-4</strong><small data-i18n="certificates.english">College English Test</small></div></li>
-              <li><span>ASU</span><div><strong>EUGA Certificate</strong><small data-i18n="certificates.euga">Academic English program certificate</small></div></li>
-            </ul>
-          </div>
+        <section id="practice" class="section practice-section">
+          <div class="section-title compact"><p data-i18n="sections.practiceKicker">项目文化与课程实践</p><h2 data-i18n="sections.practice">在真实受众和团队交付中练习解释、分析与协作。</h2></div>
+          <article class="practice-story qilou-story" data-experience="qilou"><figure><img src="assets/qilou-volunteer.jpg" alt="曾子翔在海口骑楼老街为国际游客提供英语讲解" /></figure><div><p class="story-meta">2026.06 / 2026.10 · Haikou</p><h3 data-i18n="practice.qilouTitle">骑楼老街英语讲解志愿服务</h3><p data-i18n="practice.qilouBody">面向国际游客提供英语讲解与参观引导。需要先理解本地建筑、街区与文化背景，再根据现场提问调整表达，让文化信息既准确又容易理解。</p><p class="research-transfer" data-i18n="practice.qilouTransfer">能力迁移：文化资料梳理、面向受众的解释、英文沟通与现场观察。</p></div></article>
+          <article class="practice-story ufirst-story" data-experience="ufirst"><figure><img src="assets/ufirst-haic.jpg" alt="U-First 项目视觉标识" /></figure><div><p class="story-meta">2026.10 — 2026.12 · U-First</p><h3>Student Mentor</h3><p data-i18n="practice.ufirstBody">在七周新生项目中协助学生联络、名单与签到、活动组织、团队建设、现场带领及教授沟通。持续的协调工作训练了任务跟进、信息确认和面向不同对象的沟通。</p><p class="research-transfer" data-i18n="practice.ufirstTransfer">能力迁移：名单与进度管理、沟通协调、现场记录与团队支持。</p></div></article>
+          <article class="practice-story gatsby-story" data-experience="gatsby"><div class="gatsby-cover" aria-label="GATSBY 印尼市场进入方案纯文字封面"><p>Three-Year Indonesia</p><strong>Market Entry Strategy</strong><span>Team Deliverables: PPT + Excel Financial Model</span></div><div><p class="story-meta">GATSBY · Team Competition</p><h3 data-i18n="practice.gatsbyTitle">印尼男性湿巾市场进入方案</h3><p data-i18n="practice.gatsbyBody">参与制定三年印尼男性湿巾市场进入方案，参与搭建财务模型，团队共同提交 PPT 与 Excel。该经历训练了信息筛选、假设记录、表格协作和团队交付，所有成果均为团队共同完成。</p><p class="research-transfer" data-i18n="practice.gatsbyTransfer">能力迁移：资料搜集、模型字段核对、团队版本协同与结论表达。</p></div></article>
         </section>
-
-        <section id="snapshots" class="section snapshots-section">
-          <div class="section-heading">
-            <span>07</span><h2 data-i18n="sections.snapshots">Snapshots</h2>
-          </div>
-          <div class="snapshot-grid">
-            <figure class="snapshot-wide"><img src="assets/library.jpg" alt="Yi Library exterior" /><figcaption data-i18n="snapshots.library">Yi Library, Mission Hills</figcaption></figure>
-            <figure><img src="assets/qilou-volunteer.jpg" alt="Qilou volunteer moment" /><figcaption data-i18n="snapshots.qilou">Qilou Old Street</figcaption></figure>
-            <figure><img src="assets/sparc-host.jpg" alt="Preparing the SPARC event" /><figcaption data-i18n="snapshots.sparc">SPARC · First event</figcaption></figure>
-            <figure class="snapshot-wide"><img src="assets/century-light.jpg" alt="Century Light study" /><figcaption data-i18n="snapshots.century">Observing Haikou in light</figcaption></figure>
-          </div>
+        <section id="education" class="section education-section">
+          <div class="section-title compact"><p data-i18n="sections.educationKicker">教育与荣誉</p><h2 data-i18n="sections.education">学业表现与双语专业训练。</h2></div>
+          <div class="education-record"><div class="education-period">2025.09 — 2029.06</div><div><h3 data-i18n="education.school">海南大学—亚利桑那州立大学联合国际旅游学院</h3><dl class="degree-details"><div><dt data-i18n="education.hnuLabel">海南大学学籍专业</dt><dd data-i18n="education.hnuMajor">酒店管理（中外合作办学）</dd></div><div><dt data-i18n="education.asuLabel">ASU 专业方向</dt><dd>Tourism Development and Management (TDM)</dd></div></dl></div></div>
+          <div class="academic-facts"><div><strong>7 / 104</strong><span data-i18n="education.rank">专业排名 · 前约 7%</span></div><div><strong>64.36%</strong><span data-i18n="education.excellent">课程优秀率</span></div><div><strong>586 / 469</strong><span data-i18n="education.cet">CET-4 / CET-6</span></div></div>
+          <div class="honors"><h3 data-i18n="education.honors">荣誉</h3><ul><li><time>2025—2026</time><span data-i18n="education.honor1">海南大学综合二等奖学金</span></li><li><time>2025—2026</time><span data-i18n="education.honor2">三好学生</span></li></ul></div>
         </section>
-
-        <section id="more" class="section more-section">
-          <p class="more-index">08 / MORE</p>
-          <h2 data-i18n="more.title">Still learning. Still organizing. Still observing.</h2>
-          <p data-i18n="more.body">This site is a living record rather than a finished summary. New work will be added as it becomes real.</p>
-          <div class="more-links">
-            <a href="mailto:zzeng129@asu.edu"><span data-i18n="more.email">Send an email</span> ↗</a>
-            <a href="https://github.com/zengzixiang849-collab" target="_blank" rel="noreferrer">GitHub ↗</a>
-          </div>
+        <section id="service" class="section service-section">
+          <div class="section-title compact"><p data-i18n="sections.serviceKicker">校园服务与组织参与</p><h2 data-i18n="sections.service">把沟通、协调和现场执行落实到具体任务。</h2></div>
+          <div class="service-list"><article><time>2026.09 — <span data-i18n="common.present">至今</span></time><div><h3>SPARC · Co-lead Coordinator</h3><p data-i18n="service.sparc">作为负责人之一参与社团延续与首场活动组织，承担流程、主持、现场协调，以及与同伴合作的宣传工作。</p></div></article><article><time>2026.04</time><div><h3 data-i18n="service.firstAidTitle">红十字急救与 CPR+AED</h3><p data-i18n="service.firstAid">完成急救知识与实操训练，建立在现场情境中按步骤判断、协作和响应的意识。</p></div></article><article class="quiet-line"><time data-i18n="support.new">新加入</time><div><h3 data-i18n="support.ruralTitle">乡村儿童与社区发展关注</h3><p data-i18n="support.ruralBody">新加入，关注乡村儿童与社区发展。</p></div></article></div>
         </section>
+        <section id="records" class="section records-section">
+          <div class="section-title compact"><p data-i18n="sections.recordsKicker">影像记录</p><h2 data-i18n="sections.records">学习、服务与观察发生过的现场。</h2></div>
+          <div class="records-grid"><figure class="raise-record"><img src="assets/raise-workshop.webp" alt="RAISE Hub 工作坊现场，前景为课程任务说明，参与者位于远景" /><figcaption><strong>RAISE Hub</strong><span data-i18n="records.raise">教学与学习支持工作坊现场</span></figcaption></figure><figure><img src="assets/qilou-volunteer.jpg" alt="海口骑楼老街英语志愿讲解现场" /><figcaption><strong data-i18n="records.qilouTitle">骑楼老街</strong><span data-i18n="records.qilou">英语讲解与文化沟通</span></figcaption></figure><figure class="library-record"><img src="assets/library.jpg" alt="海南大学观澜湖校区义馆建筑外景" /><figcaption><strong data-i18n="records.libraryTitle">义馆</strong><span data-i18n="records.library">海南大学观澜湖校区 · 本人拍摄</span></figcaption></figure></div>
+        </section>
+        <section id="other" class="section other-section">
+          <details><summary><span data-i18n="sections.other">其他数字与创意作品</span><small data-i18n="other.hint">展开查看，不作为科研申请主证据</small></summary><div class="other-works"><article><img src="assets/stillwater.png" alt="Stillwater 网页界面" /><div><h3>Stillwater</h3><p data-i18n="other.stillwater">个人学习与视觉实验档案，练习信息结构、网页表达和持续维护。</p><a href="https://zengzixiang849-collab.github.io/zen-stillwater/" target="_blank" rel="noreferrer" data-i18n="other.open">打开作品 ↗</a></div></article><article><img src="assets/century-light.jpg" alt="Century Light 海口世纪大桥光线观察项目" /><div><h3>Century Light</h3><p data-i18n="other.century">以海口世纪大桥为对象的时间、天气与光线观察实验。</p><a href="https://zengzixiang849-collab.github.io/zen-stillwater/century-bridge/" target="_blank" rel="noreferrer" data-i18n="other.open">打开作品 ↗</a></div></article><article><img src="assets/minimal-desk.png" alt="Minimal Desk 三维工作台作品预览" /><div><h3>Minimal Desk</h3><p data-i18n="other.desk">使用 AI 辅助 Three.js 与 Blender 工作流制作的三维个人作品空间。</p></div></article></div></details>
+        </section>
+        <section class="closing-section"><p data-i18n="closing.label">申请目标</p><h2 data-i18n="closing.title">以可靠的基础支持研究，并在真实任务中学习研究。</h2><a href="mailto:zzeng129@asu.edu"><span data-i18n="closing.email">通过邮件联系</span> <span aria-hidden="true">↗</span></a></section>
       </div>
     </main>
-
-    <footer>
-      <p>© 2026 Zixiang Zeng</p>
-      <p data-i18n="footer">Designed around Hainan light and an evolving student journey.</p>
-    </footer>
+    <footer><p>© 2026 Zixiang Zeng</p><p data-i18n="footer">本科生科研助理申请材料 · 不展示手机号、学号或私密证明文件</p></footer>
   </body>
 </html>

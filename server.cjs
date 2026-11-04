@@ -9,8 +9,10 @@ const types = {
   ".css": "text/css; charset=utf-8",
   ".js": "text/javascript; charset=utf-8",
   ".jpg": "image/jpeg",
+  ".webp": "image/webp",
   ".png": "image/png",
-  ".svg": "image/svg+xml"
+  ".svg": "image/svg+xml",
+  ".pdf": "application/pdf"
 };
 
 http.createServer((request, response) => {

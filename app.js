@@ -1,119 +1,175 @@
 const translations = {
-  zh: {
-    "nav.about": "关于",
-    "nav.news": "动态",
-    "nav.education": "教育",
-    "nav.projects": "项目",
-    "nav.experience": "经历",
-    "profile.kicker": "酒店管理 · 文化 · 数字创作",
-    "profile.role1": "酒店管理专业本科生",
-    "profile.role2": "学生组织者",
-    "profile.role3": "AI 辅助网页与视觉创作者",
-    "profile.role4": "海南观察者",
-    "profile.skills": "技能与工具",
-    "profile.cta": "查看精选作品",
-    "profile.updated": "最后更新 · 2026 年 11 月",
-    "sections.about": "关于",
-    "sections.news": "动态",
-    "sections.education": "教育经历",
-    "sections.projects": "精选项目",
-    "sections.experience": "实践经历",
-    "sections.certificates": "证书与亮点",
-    "sections.snapshots": "片段",
-    "about.lead": "我把酒店管理看作一种理解人、地点与体验之间关系的方式。",
-    "about.p1": "我就读于海南大学—亚利桑那州立大学联合国际旅游学院，酒店管理专业旅游开发与管理方向，预计于 2029 年毕业。",
-    "about.p2": "我的实践横跨学生组织、地方文化观察，以及 AI 辅助的网页与视觉创作。我喜欢把一个想法变成真正可以被进入、使用和记住的体验。",
-    "about.p3": "目前在海口，我正继续发展 SPARC 社团，担任 U-First 新生导师，并通过小型数字项目记录我所看到的海南。",
-    "about.imageCaption": "义馆 · 海南大学观澜湖校区",
-    "about.imageCredit": "摄影：曾子翔",
-    "news.n1": "开始担任 U-First Happiness 班学生导师，协助为期七周的新生适应与学习计划。",
-    "news.n2": "完成 Stillwater 与 Century Light 的新版本，以网页实验记录个人学习与城市观察。",
-    "news.n3": "国庆期间再次在骑楼老街担任英语志愿讲解员。",
-    "news.n4": "作为负责人之一组织 SPARC 首场校园活动，为 8 名参与者策划正念欢迎活动。",
-    "news.n5": "在海口骑楼老街参与英语讲解志愿服务。",
-    "news.n6": "完成红十字急救培训，取得初级救护员及 CPR+AED 证书。",
-    "education.place": "中国 · 海口",
-    "education.school": "海南大学—亚利桑那州立大学联合国际旅游学院",
-    "education.degree": "管理学学士 · 酒店管理专业 · 旅游开发与管理方向",
-    "education.courseLabel": "部分 A 等级课程",
-    "education.course1": "管理学原理",
-    "education.course2": "高等数学",
-    "education.course3": "环境科学概论",
-    "education.highlightLabel": "学业亮点",
-    "education.highlight1": "大学英语四级 · 586",
-    "education.highlight2": "ASU EUGA 证书",
-    "education.highlight3": "课程采用等级制评价",
-    "projects.stillwater": "一个持续生长的个人学习、思考与视觉实验档案；它被设计成一处让想法安静流动的空间。",
-    "projects.century": "以海口世纪大桥为对象的日光观察。时间、天气与色彩共同形成一幅可交互的城市肖像。",
-    "projects.desk": "把个人作品集变成可探索空间的 3D 工作台，使用 AI 辅助的 Three.js 与 Blender 工作流完成。",
-    "projects.culture": "一项独立文化节策划，通过活动、共享空间与学生参与，让文化交流变得更直接、更有趣。",
-    "projects.sparc": "SPARC 的首次校园聚会：面向 8 名参与者的小型正念活动，从教授邀请、流程设计到主持、音乐、冥想与现场协调均参与完成。",
-    "common.openProject": "打开项目",
-    "common.present": "至今",
-    "experience.sparcRole": "负责人之一 · 发起人与核心组织者",
-    "experience.sparcBody": "继续发展由上一届学姐从 ASU 总部带回的社团，并共同负责本地发展方向。首场活动涵盖教授邀请、流程设计、联合宣传、主持、音乐、冥想与现场执行。",
-    "experience.ufirstRole": "学生导师",
-    "experience.ufirstBody": "在七周新生项目中负责学生联络、名单与签到、活动组织、团队建设、现场带领，以及与教授的沟通协调。",
-    "experience.qilouOrg": "骑楼老街 · 龙华区",
-    "experience.qilouRole": "英语讲解志愿者",
-    "experience.qilouBody": "在海口历史街区为国际游客提供英语讲解与参观引导，帮助他们理解骑楼老街及其本地文化背景。",
-    "certificates.caption": "急救实操培训 · 2026.04",
-    "certificates.firstAid": "红十字初级救护员证",
-    "certificates.cpr": "CPR + AED 证书",
-    "certificates.redCross": "海口红十字",
-    "certificates.english": "全国大学英语四级考试",
-    "certificates.euga": "本科阶段学术英语能力",
-    "snapshots.library": "海南大学观澜湖校区 · 义馆",
-    "snapshots.qilou": "骑楼老街志愿服务",
-    "snapshots.sparc": "SPARC · 首次活动",
-    "snapshots.century": "在光线中观察海口",
-    "more.title": "继续学习，继续组织，也继续观察。",
-    "more.body": "这不是一份已经封存的总结，而是一份持续更新的记录。新的经历会在真正发生后加入这里。",
-    "more.email": "发送邮件",
-    "footer": "以海南的光线与一段持续生长的学生旅程为设计线索。"
+  en: {
+    "a11y.skip": "Skip to main content",
+    "nav.fit": "Role fit",
+    "nav.support": "Research support",
+    "nav.practice": "Experience",
+    "nav.education": "Education & honors",
+    "profile.status": "Undergraduate research assistant applicant",
+    "profile.discipline": "Tourism development and management",
+    "profile.role": "Tourism Development and Management undergraduate",
+    "profile.applicant": "Undergraduate research assistant applicant",
+    "profile.rankLabel": "Program rank",
+    "profile.topLabel": "Rank band",
+    "profile.topValue": "Top ~7%",
+    "profile.rateLabel": "A-grade course rate",
+    "profile.englishLabel": "English proficiency",
+    "profile.capabilityLabel": "Research tasks I can support",
+    "profile.capability1": "Source search and organization",
+    "profile.capability2": "Data entry and cross-checking",
+    "profile.capability3": "Chinese and English reading",
+    "profile.capability4": "Structured writing and version control",
+    "profile.capability5": "Interview, event, and team support",
+    "profile.cv": "View public Chinese CV",
+    "profile.updated": "Information updated November 2026",
+    "sections.profileKicker": "Profile and application objective",
+    "sections.profile": "Starting with dependable support work and learning research systematically.",
+    "intro.lead": "I am applying for undergraduate research assistant roles. I hope to begin with source collection, data checking, literature and material organization, structured writing, and team support, then build rigorous and reviewable research habits through real work.",
+    "intro.noteTitle": "What I bring is not a set of projects repackaged as research outcomes, but working methods I have repeatedly practiced through coursework, public-sector settings, campus programs, and cross-cultural service.",
+    "intro.note1": "Organize materials under consistent rules while retaining sources and versions.",
+    "intro.note2": "Double-check tables, numbers, and written claims.",
+    "intro.note3": "Keep information accurate and explanations clear across Chinese and English contexts.",
+    "sections.aboutKicker": "About me",
+    "sections.about": "Tourism and hospitality training connected with cultural interpretation, public service, and digital tools.",
+    "about.p1": "I study at the Hainan University–Arizona State University Joint International Tourism College. My Hainan University registered major is Hotel Management (Sino-foreign cooperative program), and my ASU concentration is Tourism Development and Management (TDM).",
+    "about.p2": "Coursework has led me to examine visitor experience, organizational operations, and cultural communication. RAISE Hub, public-health practice, and campus service have also shown me why accurate records, structured expression, confidentiality, and teamwork matter.",
+    "about.quote": "I want to develop from working quickly to working accurately, keeping evidence, and making each step reviewable.",
+    "sections.fitKicker": "Role requirements and evidence",
+    "sections.fit": "Matching research-assistant requirements with experiences that have already happened.",
+    "matrix.requirement": "Role requirement",
+    "matrix.evidence": "Existing evidence",
+    "matrix.support": "Research work I can support",
+    "matrix.r1": "Consistent academic foundation",
+    "matrix.e1": "Ranked 7/104 (top ~7%); 64.36% A-grade course rate; Outstanding Student and second-class comprehensive scholarship.",
+    "matrix.s1": "Complete assigned reading, background mapping, and foundational research training on schedule.",
+    "matrix.r2": "English-language materials",
+    "matrix.e2": "CET-4 586 and CET-6 469; English interpretation at Qilou Old Street; bilingual academic environment.",
+    "matrix.s2": "Preliminary English literature screening, terminology checks, summary notes, and cross-cultural explanation.",
+    "matrix.r3": "Material and data accuracy",
+    "matrix.e3": "Document and data practice at the Lishui District CDC in Nanjing; financial-model and team-delivery work in the GATSBY competition.",
+    "matrix.s3": "Data entry, spreadsheet review, field-consistency checks, and basic cleaning.",
+    "matrix.r4": "Structured writing and archiving",
+    "matrix.e4": "RAISE Hub material organization, website content checks, and bilingual copy review.",
+    "matrix.s4": "Research logs, file naming, source records, version tracking, and formatting consistency.",
+    "matrix.r5": "Communication and execution",
+    "matrix.e5": "U-First mentoring, Qilou volunteer interpretation, RAISE Hub, and student-organization collaboration.",
+    "matrix.s5": "Meeting and event support, task follow-up, interview coordination, and team communication.",
+    "sections.supportKicker": "Research support and material handling",
+    "sections.support": "Accountable for accuracy, sources, and delivery.",
+    "support.raiseTitle": "Responsible AI Support in Education",
+    "support.raiseBody": "Contributed to teaching-and-learning material organization, website content checks, event archiving, and bilingual copy review. The emphasis was on clear information structure, traceable sources, and consistency across versions.",
+    "support.raiseTask1": "Organized materials by subject and use, then checked titles, files, and page content.",
+    "support.raiseTask2": "Reviewed terminology, tone, and factual consistency between Chinese and English content.",
+    "support.raiseTask3": "Helped turn complex materials into public structures that are readable and reviewable.",
+    "support.cdcOrg": "Nanjing Lishui District Center for Disease Control and Prevention",
+    "support.cdcTitle": "Public-health materials and data practice",
+    "support.cdcBody": "Worked with material organization, data checking, and structured document handling in a public-health setting, gaining an understanding of accuracy, confidentiality, and process-based delivery in public institutions.",
+    "support.new": "New member",
+    "support.ruralTitle": "Rural children and community development",
+    "support.ruralBody": "Recently joined, with an interest in rural children and community development.",
+    "sections.practiceKicker": "Cultural and course practice",
+    "sections.practice": "Practicing explanation, analysis, and collaboration with real audiences and team deliverables.",
+    "practice.qilouTitle": "English volunteer interpretation at Qilou Old Street",
+    "practice.qilouBody": "Provided English interpretation and visitor guidance for international visitors. The work required understanding local architecture, neighborhood history, and cultural context, then adapting the explanation to on-site questions without losing accuracy.",
+    "practice.qilouTransfer": "Research transfer: cultural-source organization, audience-aware explanation, English communication, and field observation.",
+    "practice.ufirstBody": "Supported a seven-week first-year program through student communication, rosters and attendance, activity organization, team building, on-site guidance, and faculty coordination. The ongoing coordination developed task follow-up, information confirmation, and communication across different groups.",
+    "practice.ufirstTransfer": "Research transfer: roster and progress management, coordination, on-site records, and team support.",
+    "practice.gatsbyTitle": "Indonesia men's wet-wipes market-entry strategy",
+    "practice.gatsbyBody": "Contributed to a three-year Indonesia market-entry strategy for men's wet wipes, participated in building the financial model, and co-delivered the PPT and Excel workbook with the team. The experience developed information screening, assumption logging, spreadsheet collaboration, and team delivery; all deliverables were completed jointly by the team.",
+    "practice.gatsbyTransfer": "Research transfer: source collection, model-field checks, collaborative versioning, and communicating conclusions.",
+    "sections.educationKicker": "Education and honors",
+    "sections.education": "Academic performance and bilingual professional training.",
+    "education.school": "Hainan University–Arizona State University Joint International Tourism College",
+    "education.hnuLabel": "Hainan University registered major",
+    "education.hnuMajor": "Hotel Management (Sino-foreign cooperative program)",
+    "education.asuLabel": "ASU concentration",
+    "education.rank": "Program rank · top ~7%",
+    "education.excellent": "A-grade course rate",
+    "education.cet": "CET-4 / CET-6",
+    "education.honors": "Honors",
+    "education.honor1": "Hainan University second-class comprehensive scholarship",
+    "education.honor2": "Outstanding Student",
+    "sections.serviceKicker": "Campus service and involvement",
+    "sections.service": "Turning communication, coordination, and on-site execution into concrete tasks.",
+    "common.present": "Present",
+    "service.sparc": "As one of two lead coordinators, supported chapter continuity and the first event through program flow, hosting, on-site coordination, and collaborative publicity.",
+    "service.firstAidTitle": "Red Cross first aid and CPR+AED",
+    "service.firstAid": "Completed first-aid knowledge and practical training, strengthening step-by-step judgment, collaboration, and response awareness in on-site situations.",
+    "sections.recordsKicker": "Field records",
+    "sections.records": "Places where learning, service, and observation took place.",
+    "records.raise": "Teaching-and-learning support workshop",
+    "records.qilouTitle": "Qilou Old Street",
+    "records.qilou": "English interpretation and cultural communication",
+    "records.libraryTitle": "Yi Library",
+    "records.library": "Hainan University Mission Hills Campus · photographed by Zixiang",
+    "sections.other": "Other digital and creative work",
+    "other.hint": "Expand to view · not primary research-application evidence",
+    "other.stillwater": "A personal learning and visual archive for practicing information structure, web communication, and ongoing maintenance.",
+    "other.open": "Open project ↗",
+    "other.century": "An observation of time, weather, and light around Haikou Century Bridge.",
+    "other.desk": "A three-dimensional personal portfolio created with AI-assisted Three.js and Blender workflows.",
+    "closing.label": "Application objective",
+    "closing.title": "Support research through dependable groundwork and learn research through real tasks.",
+    "closing.email": "Contact by email",
+    "footer": "Undergraduate research assistant application · no phone number, student ID, or private supporting documents displayed"
   }
 };
 
-const english = {};
-document.querySelectorAll("[data-i18n]").forEach((node) => {
-  english[node.dataset.i18n] = node.textContent;
-});
+const chinese = {};
+document.querySelectorAll("[data-i18n]").forEach((node) => { chinese[node.dataset.i18n] = node.textContent; });
 
 const toggle = document.querySelector(".language-toggle");
-let language = localStorage.getItem("portfolio-language") || "en";
+const metaDescription = document.querySelector('meta[name="description"]');
+
+function readSavedLanguage() {
+  try {
+    const stored = window.localStorage?.getItem("research-portfolio-language");
+    if (stored === "zh" || stored === "en") return stored;
+  } catch (_) {
+    // Some embedded browsers disable localStorage; use the same-origin cookie below.
+  }
+  const cookieMatch = document.cookie.match(/(?:^|; )research-portfolio-language=(zh|en)(?:;|$)/);
+  return cookieMatch?.[1] || "zh";
+}
+
+function saveLanguage(nextLanguage) {
+  try {
+    window.localStorage?.setItem("research-portfolio-language", nextLanguage);
+  } catch (_) {
+    // Cookie fallback keeps the preference without exposing any personal data.
+  }
+  document.cookie = `research-portfolio-language=${nextLanguage};path=/;max-age=31536000;SameSite=Lax`;
+}
+
+let language = readSavedLanguage();
 
 function applyLanguage(nextLanguage) {
   language = nextLanguage;
-  const dictionary = language === "zh" ? translations.zh : english;
-
+  const dictionary = language === "en" ? translations.en : chinese;
   document.querySelectorAll("[data-i18n]").forEach((node) => {
     const value = dictionary[node.dataset.i18n];
     if (value) node.textContent = value;
   });
-
-  document.documentElement.lang = language === "zh" ? "zh-CN" : "en";
-  document.title = language === "zh" ? "曾子翔 · 个人网站" : "Zixiang Zeng · Portfolio";
-  toggle.querySelector(".language-current").textContent = language === "zh" ? "中" : "EN";
-  toggle.setAttribute("aria-label", language === "zh" ? "Switch to English" : "切换为中文");
-  localStorage.setItem("portfolio-language", language);
+  const isEnglish = language === "en";
+  document.documentElement.lang = isEnglish ? "en" : "zh-CN";
+  document.title = isEnglish ? "Zixiang Zeng | Undergraduate Research Assistant Application" : "曾子翔｜本科生科研助理申请";
+  metaDescription.content = isEnglish
+    ? "Undergraduate research assistant application portfolio of Zixiang Zeng, focused on academic preparation, English, source and data handling, structured writing, and teamwork."
+    : "曾子翔的本科生科研助理申请网站，呈现学业基础、英文能力、资料与数据处理、规范写作和团队协作证据。";
+  toggle.querySelector(".language-current").textContent = isEnglish ? "EN" : "中";
+  toggle.setAttribute("aria-label", isEnglish ? "切换为中文" : "Switch to English");
+  saveLanguage(language);
 }
 
-toggle.addEventListener("click", () => applyLanguage(language === "en" ? "zh" : "en"));
+toggle.addEventListener("click", () => applyLanguage(language === "zh" ? "en" : "zh"));
 applyLanguage(language);
 
-const sectionLinks = [...document.querySelectorAll(".site-header nav a")];
-const sections = sectionLinks
-  .map((link) => document.querySelector(link.getAttribute("href")))
-  .filter(Boolean);
-
+const navLinks = [...document.querySelectorAll(".site-header nav a")];
+const observedSections = navLinks.map((link) => document.querySelector(link.getAttribute("href"))).filter(Boolean);
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (!entry.isIntersecting) return;
-    sectionLinks.forEach((link) => {
-      const active = link.getAttribute("href") === `#${entry.target.id}`;
-      link.toggleAttribute("aria-current", active);
-    });
+    navLinks.forEach((link) => link.setAttribute("aria-current", String(link.getAttribute("href") === `#${entry.target.id}`)));
   });
 }, { rootMargin: "-25% 0px -65%", threshold: 0 });
-
-sections.forEach((section) => observer.observe(section));
+observedSections.forEach((section) => observer.observe(section));

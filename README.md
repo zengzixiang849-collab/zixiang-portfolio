@@ -1,6 +1,6 @@
-# Zixiang Zeng Portfolio
+# Zixiang Zeng · Research Assistant Application Portfolio
 
-A bilingual, static personal portfolio built for GitHub Pages. The visual system uses a pale-blue Hainan-light palette, an editorial profile sidebar, and a chronological content structure.
+A bilingual, static application portfolio built for GitHub Pages. Chinese is the default language, with an English switch. The page connects research-assistant requirements to verifiable academic, material-handling, English, public-service, and teamwork evidence.
 
 **Live site:** https://zengzixiang849-collab.github.io/zixiang-portfolio/
 
@@ -16,6 +16,10 @@ Then visit `http://localhost:4173`.
 
 ## GitHub Pages deployment
 
-The repository is configured to deploy from the `main` branch and `/ (root)`. Pushing a new commit to `main` republishes the site automatically.
+The repository is configured to deploy from the `main` branch and `/ (root)`. Pushing a new commit to `main` republishes the site automatically. Review branches should not be pushed or merged until their content and privacy boundaries are approved.
 
 No build command or dependency installation is required.
+
+## Public CV
+
+The website links only to `files/Zixiang-Zeng-Research-Assistant-CV-Public-ZH.pdf`, the public-safe Chinese resume. It does not link to the private application resume containing a phone number.
