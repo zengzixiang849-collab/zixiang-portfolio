@@ -1,10 +1,11 @@
 const translations = {
   en: {
     "a11y.skip": "Skip to main content",
-    "nav.fit": "Role fit",
-    "nav.support": "Research support",
-    "nav.practice": "Experience",
-    "nav.education": "Education & honors",
+    "nav.about": "About",
+    "nav.education": "Education",
+    "nav.projects": "Projects",
+    "nav.experience": "Experience",
+    "nav.snapshots": "Snapshots",
     "profile.status": "Undergraduate research assistant applicant",
     "profile.discipline": "Tourism development and management",
     "profile.role": "Tourism Development and Management undergraduate",
@@ -15,15 +16,13 @@ const translations = {
     "profile.topValue": "Top ~7%",
     "profile.rateLabel": "A-grade course rate",
     "profile.englishLabel": "English proficiency",
-    "profile.capabilityLabel": "Research tasks I can support",
-    "profile.capability1": "Source search and organization",
-    "profile.capability2": "Data entry and cross-checking",
-    "profile.capability3": "Chinese and English reading",
-    "profile.capability4": "Structured writing and version control",
-    "profile.capability5": "Event coordination and team support",
-    "profile.capability6": "Off-campus fieldwork and project visits (C2 driver's license)",
-    "profile.cv": "View public Chinese CV",
-    "profile.updated": "Information updated November 2026",
+    "profile.capabilityLabel": "Interests and skills",
+    "profile.capability1": "Tourism culture and community development",
+    "profile.capability2": "Source organization and basic data handling",
+    "profile.capability3": "Chinese-English reading and communication",
+    "profile.capability4": "Report writing and project collaboration",
+    "profile.cv": "Chinese CV",
+    "profile.updated": "Last updated: November 2026",
     "sections.profileKicker": "Profile and application objective",
     "sections.profile": "Starting with dependable support work and learning research systematically.",
     "intro.lead": "I am applying for undergraduate research assistant roles. I hope to begin with source collection, data checking, literature and material organization, structured writing, and team support, then build rigorous and reviewable research habits through real work.",
@@ -171,10 +170,10 @@ function applyLanguage(nextLanguage) {
   });
   const isEnglish = language === "en";
   document.documentElement.lang = isEnglish ? "en" : "zh-CN";
-  document.title = isEnglish ? "Zixiang Zeng | Undergraduate Research Assistant Application" : "曾子翔｜本科生科研助理申请";
+  document.title = isEnglish ? "Zixiang Zeng | Personal Website" : "曾子翔｜个人主页";
   metaDescription.content = isEnglish
-    ? "Undergraduate research assistant application portfolio of Zixiang Zeng, focused on academic preparation, English, source and data handling, structured writing, and teamwork."
-    : "曾子翔的本科生科研助理申请网站，呈现学业基础、英文能力、资料与数据处理、规范写作和团队协作证据。";
+    ? "Personal website of Zixiang Zeng, presenting education, research interests, projects, and campus experience."
+    : "曾子翔的个人主页，记录教育背景、研究兴趣、项目实践与校园经历。";
   toggle.querySelector(".language-current").textContent = isEnglish ? "EN" : "中";
   toggle.querySelector(".language-other").textContent = isEnglish ? "中" : "EN";
   toggle.setAttribute("aria-label", isEnglish ? "切换为中文" : "Switch to English");
