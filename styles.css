@@ -52,8 +52,8 @@ p, h1, h2, h3, figure, blockquote, dl, dd { margin-top: 0; }
 .social-links a, .social-link { width: 31px; height: 31px; display: inline-grid; place-items: center; color: var(--navy); border: 1px solid #dbe5e9; border-radius: 50%; background: #fff; transition: color .18s ease, border-color .18s ease, transform .18s ease; }
 .social-links a:hover { color: var(--teal-text); border-color: var(--teal); transform: translateY(-2px); }
 .social-links svg { width: 14px; height: 14px; fill: currentColor; }
-.social-link.orcid { color: #728087; font-size: .72rem; font-weight: 800; letter-spacing: -.04em; }
-.social-link.pending { opacity: .5; cursor: help; }
+.social-links .orcid { color: #6b7e31; font-size: .72rem; font-weight: 800; letter-spacing: -.04em; }
+.social-links .orcid:hover { color: #8cab32; border-color: #8cab32; }
 .capabilities { margin-top: 23px; }
 .capabilities > p { margin-bottom: 7px; color: var(--teal-text); font-size: .7rem; font-weight: 700; }
 .capabilities ul { margin: 0; padding: 0; list-style: none; }
