@@ -4,15 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="曾子翔的个人主页，记录教育背景、研究兴趣、项目实践与校园经历。" />
-    <meta name="theme-color" content="#ffffff" />
+    <meta name="theme-color" content="#f7fbfd" />
+    <meta property="og:title" content="曾子翔｜个人主页" />
+    <meta property="og:description" content="教育背景、研究兴趣、项目实践与校园经历。" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://zengzixiang849-collab.github.io/zixiang-portfolio/" />
+    <meta property="og:image" content="https://zengzixiang849-collab.github.io/zixiang-portfolio/assets/portrait.jpg" />
     <title>曾子翔｜个人主页</title>
+    <link rel="canonical" href="https://zengzixiang849-collab.github.io/zixiang-portfolio/" />
+    <link rel="icon" type="image/png" href="assets/avatar-pixel-v3-64.png" />
     <link rel="stylesheet" href="styles.css" />
     <script src="app.js" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#about" data-i18n="a11y.skip">跳到主要内容</a>
     <header class="site-header">
-      <a class="site-wordmark" href="#about" aria-label="返回顶部">ZIXIANG ZENG</a>
+      <a class="site-wordmark" href="#about" aria-label="返回顶部"><img src="assets/avatar-pixel-v3-64.png" width="50" height="50" alt="" aria-hidden="true" /><span class="wordmark-name">ZIXIANG ZENG</span></a>
       <nav aria-label="主导航">
         <a href="#about" data-i18n="nav.about">关于</a><a href="#news" data-i18n="nav.news">动态</a><a href="#education" data-i18n="nav.education">教育</a><a href="#projects" data-i18n="nav.projects">项目</a><a href="#experience" data-i18n="nav.experience">经历</a><a href="#records" data-i18n="nav.snapshots">影像</a>
         <button class="language-toggle" type="button" aria-label="Switch to English"><span class="language-current">中</span><span aria-hidden="true">/</span><span class="language-other">EN</span></button>
@@ -33,13 +40,24 @@
           <a class="orcid" href="https://orcid.org/0009-0007-0666-8377" target="_blank" rel="noreferrer" aria-label="ORCID" title="ORCID">iD</a>
         </div>
         <div class="capabilities"><p data-i18n="profile.capabilityLabel">关注方向与能力</p><ul><li data-i18n="profile.capability1">旅游文化与社区发展</li><li data-i18n="profile.capability2">资料整理与基础数据处理</li><li data-i18n="profile.capability3">中英文材料阅读与沟通</li><li data-i18n="profile.capability4">报告写作与项目协作</li></ul></div>
-        <a class="cv-state" href="files/Zixiang-Zeng-Research-Assistant-CV-Public-ZH.pdf" target="_blank"><span data-i18n="profile.cv">中文简历</span> <span aria-hidden="true">↗</span></a><p class="updated" data-i18n="profile.updated">最后更新：2026 年 11 月</p>
+        <div class="resume-actions" aria-label="简历下载">
+          <a href="files/Zixiang-Zeng-CV-Public-ZH.pdf" target="_blank"><span data-i18n="profile.cvZh">中文简历</span> <span aria-hidden="true">↗</span></a>
+          <a href="files/Zixiang-Zeng-CV-Public-EN.pdf" target="_blank"><span data-i18n="profile.cvEn">English CV</span> <span aria-hidden="true">↗</span></a>
+        </div>
+        <aside class="desktop-access" aria-label="在电脑端继续查看">
+          <p data-i18n="desktop.label">在电脑端继续查看</p>
+          <a class="desktop-url" href="https://zengzixiang849-collab.github.io/zixiang-portfolio/" target="_blank" rel="noreferrer">zengzixiang849-collab.github.io/<wbr>zixiang-portfolio</a>
+          <div><button type="button" data-copy-url data-i18n="desktop.copy">复制网址</button><button type="button" data-share-url data-i18n="desktop.share">分享网站</button></div>
+          <small data-i18n="desktop.hint">可复制后发送到“文件传输助手”，再在电脑打开。</small>
+        </aside>
+        <p class="updated" data-i18n="profile.updated">最后更新：2026 年 11 月</p>
       </aside>
       <div class="narrative">
         <section id="about" class="section about-section">
-          <div class="about-heading"><p class="section-kicker" data-i18n="sections.aboutKicker">关于我</p><h2 data-i18n="sections.about">学习与实践围绕旅游、文化和社区展开。</h2></div>
+          <div class="about-heading"><p class="section-kicker" data-i18n="sections.aboutKicker">关于我</p><h2 data-i18n="sections.about">学习与实践聚焦旅游、文化与社区。</h2></div>
           <div class="about-copy">
             <p data-i18n="about.p1">曾子翔，海南大学—亚利桑那州立大学联合国际旅游学院本科生。海南大学学籍专业为酒店管理（中外合作办学），ASU 专业方向为 Tourism Development and Management（TDM）。</p>
+            <p data-i18n="about.academic">目前专业排名 7/104（前约 7%），课程成绩优秀率为 64.36%；获海南大学综合二等奖学金，并获评今朝书院“三好学生”。</p>
             <p data-i18n="about.p2">目前关注旅游活动与地方文化、社区生活之间的关系。相关实践包括海口骑楼老街英文讲解、U-First 课程协助及校园项目参与。</p>
             <p data-i18n="about.p3">RAISE Hub 与公共机构经历涉及资料收集与归档、基础数据核对、总结文件撰写及团队协作。</p>
           </div>
@@ -137,6 +155,13 @@
         <section class="closing-section"><p data-i18n="closing.label">联系</p><h2 data-i18n="closing.title">课程、项目与合作交流可通过邮件联系。</h2><a href="mailto:zzeng129@asu.edu"><span data-i18n="closing.email">zzeng129@asu.edu</span> <span aria-hidden="true">↗</span></a></section>
       </div>
     </main>
+    <div class="mobile-action-bar" aria-label="手机快捷操作">
+      <details class="mobile-jump-menu"><summary data-i18n="mobile.directory">目录</summary><nav aria-label="页面目录"><a href="#about" data-i18n="nav.about">关于</a><a href="#education" data-i18n="nav.education">教育</a><a href="#projects" data-i18n="nav.projects">项目</a><a href="#experience" data-i18n="nav.experience">经历</a><a href="#records" data-i18n="nav.snapshots">影像</a></nav></details>
+      <a href="files/Zixiang-Zeng-CV-Public-ZH.pdf" target="_blank" data-mobile-resume data-i18n="mobile.resume">简历</a>
+      <button type="button" data-copy-url data-i18n="desktop.copy">复制网址</button>
+      <button type="button" data-share-url data-i18n="desktop.shareShort">分享</button>
+    </div>
+    <div class="copy-toast" role="status" aria-live="polite"></div>
     <footer><p>© 2026 Zixiang Zeng</p><p data-i18n="footer">个人学习、项目与校园经历记录</p></footer>
   </body>
 </html>

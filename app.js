@@ -19,11 +19,22 @@ const translations = {
     "profile.capability2": "Source organization and basic data handling",
     "profile.capability3": "Chinese-English reading and communication",
     "profile.capability4": "Report writing and project collaboration",
-    "profile.cv": "Chinese CV",
+    "profile.cvZh": "Chinese CV",
+    "profile.cvEn": "English CV",
     "profile.updated": "Last updated: November 2026",
+    "desktop.label": "Continue on a computer",
+    "desktop.copy": "Copy URL",
+    "desktop.share": "Share website",
+    "desktop.shareShort": "Share",
+    "desktop.hint": "Copy the link to File Transfer or a chat, then open it on a computer.",
+    "mobile.directory": "Menu",
+    "mobile.resume": "CV",
+    "notice.copied": "Website URL copied",
+    "notice.copyFailed": "Press and hold the URL above to copy it",
     "sections.aboutKicker": "About me",
-    "sections.about": "Learning and practice centered on tourism, culture, and communities.",
+    "sections.about": "Learning and practice focused on tourism, culture, and communities.",
     "about.p1": "Zixiang Zeng is an undergraduate at the Hainan University–Arizona State University Joint International Tourism College. His Hainan University registered major is Hotel Management (Sino-foreign cooperative program), and his ASU concentration is Tourism Development and Management (TDM).",
+    "about.academic": "He currently ranks 7th among 104 students (approximately the top 7%), with 64.36% of course results rated excellent. He received Hainan University's Second-Class Comprehensive Scholarship and was recognized as an Outstanding Student by Jinzhao College.",
     "about.p2": "His current interests concern the relationships among tourism activities, local culture, and community life. Related experience includes English interpretation at Haikou Qilou Old Street, U-First course support, and campus projects.",
     "about.p3": "His work with RAISE Hub and a public institution has involved source collection and archiving, basic data checking, summary-document writing, and team collaboration.",
     "about.interestLabel": "Current interests",
@@ -221,6 +232,8 @@ function applyLanguage(nextLanguage) {
   toggle.querySelector(".language-current").textContent = isEnglish ? "EN" : "中";
   toggle.querySelector(".language-other").textContent = isEnglish ? "中" : "EN";
   toggle.setAttribute("aria-label", isEnglish ? "切换为中文" : "Switch to English");
+  const mobileResume = document.querySelector("[data-mobile-resume]");
+  if (mobileResume) mobileResume.href = isEnglish ? "files/Zixiang-Zeng-CV-Public-EN.pdf" : "files/Zixiang-Zeng-CV-Public-ZH.pdf";
   saveLanguage(language);
 }
 
@@ -236,3 +249,57 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, { rootMargin: "-25% 0px -65%", threshold: 0 });
 observedSections.forEach((section) => observer.observe(section));
+
+const SITE_URL = "https://zengzixiang849-collab.github.io/zixiang-portfolio/";
+const toast = document.querySelector(".copy-toast");
+let toastTimer;
+
+function textFor(key, fallback) {
+  return (language === "en" ? translations.en[key] : chinese[key]) || fallback;
+}
+
+function showToast(message) {
+  if (!toast) return;
+  toast.textContent = message;
+  toast.classList.add("is-visible");
+  window.clearTimeout(toastTimer);
+  toastTimer = window.setTimeout(() => toast.classList.remove("is-visible"), 2200);
+}
+
+async function copySiteUrl() {
+  try {
+    if (navigator.clipboard && window.isSecureContext) {
+      await navigator.clipboard.writeText(SITE_URL);
+    } else {
+      const field = document.createElement("textarea");
+      field.value = SITE_URL;
+      field.setAttribute("readonly", "");
+      field.style.position = "fixed";
+      field.style.opacity = "0";
+      document.body.appendChild(field);
+      field.select();
+      if (!document.execCommand("copy")) throw new Error("copy unavailable");
+      field.remove();
+    }
+    showToast(textFor("notice.copied", "网址已复制"));
+  } catch (_) {
+    showToast(textFor("notice.copyFailed", "请长按上方网址复制"));
+  }
+}
+
+document.querySelectorAll("[data-copy-url]").forEach((button) => button.addEventListener("click", copySiteUrl));
+document.querySelectorAll("[data-share-url]").forEach((button) => button.addEventListener("click", async () => {
+  if (navigator.share) {
+    try {
+      await navigator.share({ title: document.title, text: metaDescription.content, url: SITE_URL });
+      return;
+    } catch (error) {
+      if (error?.name === "AbortError") return;
+    }
+  }
+  await copySiteUrl();
+}));
+
+document.querySelectorAll(".mobile-jump-menu a").forEach((link) => link.addEventListener("click", () => {
+  link.closest("details")?.removeAttribute("open");
+}));
