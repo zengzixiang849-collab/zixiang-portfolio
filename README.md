@@ -1,6 +1,6 @@
 # Zixiang Zeng · Personal Portfolio
 
-A bilingual, static personal portfolio built for GitHub Pages. Chinese is the default language, with an English switch. The page presents education, research interests, projects, practical experience, and campus involvement.
+A bilingual, static personal portfolio built for GitHub Pages. Chinese is the default language, with an English switch. The page presents education, projects, practical experience, campus involvement, and a small photo wall.
 
 **Live site:** https://zengzixiang849-collab.github.io/zixiang-portfolio/
 
