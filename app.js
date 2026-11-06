@@ -22,8 +22,18 @@ const translations = {
     "profile.capability4": "Report writing and project collaboration",
     "profile.license": "C2 driver's license",
     "profile.licenseNote": "Available for off-campus visits, project observation, and fieldwork travel",
-    "profile.cv": "Chinese CV",
+    "profile.cvZh": "Chinese CV",
+    "profile.cvEn": "English CV",
     "profile.updated": "Last updated: November 2026",
+    "desktop.label": "Continue on a computer",
+    "desktop.copy": "Copy URL",
+    "desktop.share": "Share website",
+    "desktop.shareShort": "Share",
+    "desktop.hint": "Copy the link to File Transfer or a chat, then open it on a computer.",
+    "mobile.directory": "Menu",
+    "mobile.resume": "CV",
+    "notice.copied": "Website URL copied",
+    "notice.copyFailed": "Press and hold the URL above to copy it",
     "sections.aboutKicker": "About me",
     "sections.about": "Learning and practice focused on tourism, culture, and communities.",
     "about.p1": "Zixiang Zeng is an undergraduate at the Hainan University–Arizona State University Joint International Tourism College. His Hainan University registered major is Hotel Management (Sino-foreign cooperative program), and his ASU concentration is Tourism Development and Management (TDM).",
@@ -256,6 +266,8 @@ function applyLanguage(nextLanguage) {
   toggle.querySelector(".language-current").textContent = isEnglish ? "EN" : "中";
   toggle.querySelector(".language-other").textContent = isEnglish ? "中" : "EN";
   toggle.setAttribute("aria-label", isEnglish ? "切换为中文" : "Switch to English");
+  const mobileResume = document.querySelector("[data-mobile-resume]");
+  if (mobileResume) mobileResume.href = isEnglish ? "files/Zixiang-Zeng-CV-Public-EN.pdf" : "files/Zixiang-Zeng-CV-Public-ZH.pdf";
   document.querySelectorAll(".hainan-photo").forEach((button) => {
     const title = dictionary[button.dataset.titleKey] || chinese[button.dataset.titleKey] || "";
     const caption = dictionary[button.dataset.captionKey] || chinese[button.dataset.captionKey] || "";
@@ -307,3 +319,57 @@ lightboxClose?.addEventListener("click", () => lightbox.close());
 lightbox?.addEventListener("click", (event) => {
   if (event.target === lightbox) lightbox.close();
 });
+
+const SITE_URL = "https://zengzixiang849-collab.github.io/zixiang-portfolio/";
+const toast = document.querySelector(".copy-toast");
+let toastTimer;
+
+function textFor(key, fallback) {
+  return (language === "en" ? translations.en[key] : chinese[key]) || fallback;
+}
+
+function showToast(message) {
+  if (!toast) return;
+  toast.textContent = message;
+  toast.classList.add("is-visible");
+  window.clearTimeout(toastTimer);
+  toastTimer = window.setTimeout(() => toast.classList.remove("is-visible"), 2200);
+}
+
+async function copySiteUrl() {
+  try {
+    if (navigator.clipboard && window.isSecureContext) {
+      await navigator.clipboard.writeText(SITE_URL);
+    } else {
+      const field = document.createElement("textarea");
+      field.value = SITE_URL;
+      field.setAttribute("readonly", "");
+      field.style.position = "fixed";
+      field.style.opacity = "0";
+      document.body.appendChild(field);
+      field.select();
+      if (!document.execCommand("copy")) throw new Error("copy unavailable");
+      field.remove();
+    }
+    showToast(textFor("notice.copied", "网址已复制"));
+  } catch (_) {
+    showToast(textFor("notice.copyFailed", "请长按上方网址复制"));
+  }
+}
+
+document.querySelectorAll("[data-copy-url]").forEach((button) => button.addEventListener("click", copySiteUrl));
+document.querySelectorAll("[data-share-url]").forEach((button) => button.addEventListener("click", async () => {
+  if (navigator.share) {
+    try {
+      await navigator.share({ title: document.title, text: metaDescription.content, url: SITE_URL });
+      return;
+    } catch (error) {
+      if (error?.name === "AbortError") return;
+    }
+  }
+  await copySiteUrl();
+}));
+
+document.querySelectorAll(".mobile-jump-menu a").forEach((link) => link.addEventListener("click", () => {
+  link.closest("details")?.removeAttribute("open");
+}));

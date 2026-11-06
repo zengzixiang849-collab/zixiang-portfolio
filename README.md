@@ -1,6 +1,6 @@
-# Zixiang Zeng · Research Assistant Application Portfolio
+# Zixiang Zeng · Personal Portfolio
 
-A bilingual, static application portfolio built for GitHub Pages. Chinese is the default language, with an English switch. The page connects research-assistant requirements to verifiable academic, material-handling, English, public-service, and teamwork evidence.
+A bilingual, static personal portfolio built for GitHub Pages. Chinese is the default language, with an English switch. The page presents education, research interests, projects, practical experience, and campus involvement.
 
 **Live site:** https://zengzixiang849-collab.github.io/zixiang-portfolio/
 
@@ -22,4 +22,9 @@ No build command or dependency installation is required.
 
 ## Public CV
 
-The website links only to `files/Zixiang-Zeng-Research-Assistant-CV-Public-ZH.pdf`, the public-safe Chinese resume. It does not link to the private application resume containing a phone number.
+The website links to public-safe Chinese and English resumes:
+
+- `files/Zixiang-Zeng-CV-Public-ZH.pdf`
+- `files/Zixiang-Zeng-CV-Public-EN.pdf`
+
+Both omit the private phone number used in application copies.
