@@ -7,6 +7,7 @@ const translations = {
     "nav.projects": "Projects",
     "nav.experience": "Experience",
     "nav.snapshots": "Snapshots",
+    "nav.hainan": "Hainan",
     "profile.discipline": "Tourism development and management",
     "profile.role": "Tourism Development and Management undergraduate",
     "profile.rankLabel": "Program rank",
@@ -19,13 +20,16 @@ const translations = {
     "profile.capability2": "Source organization and basic data handling",
     "profile.capability3": "Chinese-English reading and communication",
     "profile.capability4": "Report writing and project collaboration",
+    "profile.license": "C2 driver's license",
+    "profile.licenseNote": "Available for off-campus visits, project observation, and fieldwork travel",
     "profile.cv": "Chinese CV",
     "profile.updated": "Last updated: November 2026",
     "sections.aboutKicker": "About me",
-    "sections.about": "Learning and practice centered on tourism, culture, and communities.",
+    "sections.about": "Learning and practice focused on tourism, culture, and communities.",
     "about.p1": "Zixiang Zeng is an undergraduate at the Hainan University–Arizona State University Joint International Tourism College. His Hainan University registered major is Hotel Management (Sino-foreign cooperative program), and his ASU concentration is Tourism Development and Management (TDM).",
-    "about.p2": "His current interests concern the relationships among tourism activities, local culture, and community life. Related experience includes English interpretation at Haikou Qilou Old Street, U-First course support, and campus projects.",
-    "about.p3": "His work with RAISE Hub and a public institution has involved source collection and archiving, basic data checking, summary-document writing, and team collaboration.",
+    "about.academic": "He currently ranks 7th among 104 students (approximately the top 7%), with 64.36% of course results rated excellent. He received Hainan University's Second-Class Comprehensive Scholarship and was recognized as an Outstanding Student by Jinzhao College.",
+    "about.p2": "His current interests concern the relationships among tourism activities, local culture, and community life. Since a college island-loop course practice in Fall 2025, coursework travel and personal journeys have supported ongoing observation of tourism spaces, cultural landscapes, and local life across Hainan.",
+    "about.p3": "His RAISE Hub practice focused on prototyping and evaluating an AI learning assistant, while his public-institution internship involved basic data checking, summary writing, and structured records.",
     "about.interestLabel": "Current interests",
     "about.interestCore": "Primary",
     "about.interestCoreValue": "Cultural heritage and community development",
@@ -42,9 +46,9 @@ const translations = {
     "news.honorTag": "Honors",
     "news.honorTitle": "Named an Outstanding Student and awarded a Hainan University second-class comprehensive scholarship",
     "news.honorBody": "Received two university and residential-college honors for sustained academic work, campus involvement, and overall performance.",
-    "news.raiseTag": "Research support",
-    "news.raiseTitle": "Contributing to project-material organization at RAISE Hub",
-    "news.raiseBody": "Supporting source collection, classification, key-information extraction, research notes, and digital workshop materials, followed by human verification.",
+    "news.raiseTag": "Responsible AI practice",
+    "news.raiseTitle": "Prototyped and evaluated a course AI learning assistant",
+    "news.raiseBody": "Used ASU CreateAI Builder to configure course materials, response rules, and usage boundaries, then tested accuracy, source explanation, boundary handling, and academic-integrity behavior.",
     "news.gatsbyTag": "Team project",
     "news.gatsbyTitle": "Completed the GATSBY Indonesia market-entry strategy team deliverables",
     "news.gatsbyBody": "Co-delivered a three-year men's wet-wipes market-entry strategy deck and an Excel financial model with the team.",
@@ -65,12 +69,23 @@ const translations = {
     "projects.ufirstBody": "As an older student assistant, supported faculty with weekday theory classes and weekend outdoor action sessions, helping lower-year students complete leadership practice and course activities.",
     "projects.ufirstContribution": "Activity planning, task allocation, student support, and on-site delivery",
     "experience.kicker": "Professional experience",
-    "experience.raiseType": "Research support",
-    "experience.raiseTitle": "Research Assistant",
-    "experience.raiseSummary": "Supported the organization of project materials and digital content, with attention to source records, file structure, and content accuracy.",
-    "experience.raiseTask1": "Collected, classified, and archived project materials while recording sources and versions.",
-    "experience.raiseTask2": "Extracted key information and organized research notes and digital workshop files.",
-    "experience.raiseTask3": "Used AI tools to assist web-content organization, followed by human verification.",
+    "experience.raiseType": "AI practice and evaluation",
+    "experience.raiseTitle": "AI Learning Assistant Prototyping and Evaluation",
+    "experience.raiseSummary": "Used ASU CreateAI Builder to support hands-on prototyping of a course AI learning assistant and RAISE Hub web-content concepts.",
+    "experience.raiseTask1": "Configured course knowledge materials, response rules, and usage boundaries for a course-information assistant prototype.",
+    "experience.raiseTask2": "Designed factual, ambiguous, out-of-scope, and academic-integrity prompts and documented response behavior.",
+    "experience.raiseTask3": "Verified consistency with course materials, source explanations, and uncertainty handling, applying human judgment to unsuitable outputs.",
+    "experience.raiseTask4": "Contributed to RAISE Hub web-content prototyping while learning to use AI with human oversight, fact-checking, and clear responsibility boundaries.",
+    "evidence.kicker": "Capabilities and evidence",
+    "evidence.title": "Grounding each capability in work that has already happened.",
+    "evidence.aiTitle": "AI output evaluation",
+    "evidence.aiBody": "RAISE Hub learning-assistant prototyping, prompt testing, source checking, and human judgment.",
+    "evidence.dataTitle": "Data and structured writing",
+    "evidence.dataBody": "CDC data checks, document organization, and two monthly work summaries.",
+    "evidence.localTitle": "Local culture and on-site observation",
+    "evidence.localBody": "English interpretation at Qilou Old Street, island-loop course practice, and personal travel across Hainan.",
+    "evidence.mobilityTitle": "Off-campus mobility",
+    "evidence.mobilityBody": "C2 driver's license supporting off-campus visits, project observation, and fieldwork travel.",
     "experience.cdcOrg": "Nanjing Lishui District Center for Disease Control and Prevention",
     "experience.cdcType": "Summer internship",
     "experience.cdcTitle": "Operational materials and data support",
@@ -93,18 +108,18 @@ const translations = {
     "matrix.e3": "Document and data practice at the Lishui District CDC in Nanjing; financial-model and team-delivery work in the GATSBY competition.",
     "matrix.s3": "Data entry, spreadsheet review, field-consistency checks, and basic organization.",
     "matrix.r4": "Structured writing and archiving",
-    "matrix.e4": "RAISE Hub material classification and archiving, key-information extraction, research-note organization, and human verification.",
-    "matrix.s4": "Research notes, file naming, source records, version tracking, and formatting consistency.",
+    "matrix.e4": "RAISE Hub AI learning-assistant prototyping, prompt testing, source checking, boundary evaluation, and human review.",
+    "matrix.s4": "AI-output verification, evidence tracking, issue documentation, and structured research notes.",
     "matrix.r5": "Communication and execution",
     "matrix.e5": "U-First mentoring, Qilou volunteer interpretation, RAISE Hub, and student-organization collaboration.",
     "matrix.s5": "Meeting and event support, task follow-up, activity coordination, and team communication.",
     "sections.supportKicker": "Research support and material handling",
     "sections.support": "Accountable for accuracy, sources, and delivery.",
-    "support.raiseTitle": "RAISE Hub research support",
-    "support.raiseBody": "Collected, classified, and archived project materials; extracted key information and organized research notes; used AI tools to assist with Workshop web content and digital-file organization, followed by human verification.",
-    "support.raiseTask1": "Classified materials by topic and use while retaining source and version information.",
-    "support.raiseTask2": "Extracted key information and organized it into structured research notes.",
-    "support.raiseTask3": "Human-verified content after AI-assisted organization.",
+    "support.raiseTitle": "RAISE Hub responsible-AI practice",
+    "support.raiseBody": "Configured and tested a course AI learning assistant, evaluated source explanation and response boundaries, and contributed to RAISE Hub web-content prototyping with human verification.",
+    "support.raiseTask1": "Configured course materials, response rules, and usage boundaries.",
+    "support.raiseTask2": "Tested factual, ambiguous, out-of-scope, and academic-integrity prompts.",
+    "support.raiseTask3": "Verified outputs against source materials and documented problems for revision.",
     "support.cdcOrg": "Nanjing Lishui District Center for Disease Control and Prevention",
     "support.cdcTitle": "Public-health materials and data practice",
     "support.cdcBody": "Entered, checked, and organized operational data; helped organize corporate health-education materials; and wrote two monthly work summaries, developing accurate recordkeeping, structured writing, and confidentiality awareness in a public institution.",
@@ -150,7 +165,7 @@ const translations = {
     "service.training": "Skills training",
     "service.sst": "Supported student services, information communication, and activity delivery while maintaining timely responses and clear records for faculty and students.",
     "service.festivalTitle": "International Cultural Festival · Planning and delivery",
-    "service.festival": "Contributed to preparation, content communication, and on-site delivery for approximately 2,000 participants; related participation increased by about 30%.",
+    "service.festival": "Contributed to preparation, content communication, and on-site delivery for approximately 1,000 participants; related participation increased by about 20%.",
     "service.sparc": "As one of two lead coordinators, supported chapter continuity and the first event through program flow, hosting, on-site coordination, and collaborative publicity.",
     "service.libraryTitle": "Mission Hills Campus Library Secretariat",
     "service.library": "Volunteered in book shelving and space organization, arranging books according to classification and location requirements.",
@@ -158,12 +173,32 @@ const translations = {
     "service.firstAid": "Completed first-aid knowledge and practical training, strengthening step-by-step judgment, collaboration, and response awareness in on-site situations.",
     "sections.recordsKicker": "Field records",
     "sections.records": "Places where learning, service, and observation took place.",
-    "records.raise": "Workshop page and event posters",
+    "records.raise": "Web-content prototype and responsible-AI workshops",
     "records.qilouTitle": "Qilou Old Street",
     "records.qilou": "English interpretation and cultural communication",
     "records.ufirst": "Outdoor action session for Nature and the Humanistic Spirit",
     "records.libraryTitle": "Library volunteer service",
     "records.library": "Book organization and shelving session",
+    "hainan.kicker": "Hainan field notes",
+    "hainan.title": "Learning an island through course travel and personal journeys.",
+    "hainan.intro": "Beginning with a college island-loop course practice in Fall 2025, I have continued to learn about Hainan through coursework travel and personal journeys. My travels cover most of Hainan's cities and counties, with attention to island tourism, local culture, village spaces, heritage, and natural landscapes as they appear in everyday local life.",
+    "hainan.mapNote": "A thematic index, not a precise route",
+    "hainan.tag1": "Island-loop course practice",
+    "hainan.tag2": "Coastal and island spaces",
+    "hainan.tag3": "Heritage and villages",
+    "hainan.tag4": "Nature and lesser-known destinations",
+    "hainan.coastTitle": "Island-loop course practice",
+    "hainan.coastCaption": "Beginning to read Hainan through its coastal tourism spaces",
+    "hainan.meilangTitle": "Meilang Twin Pagodas, Chengmai",
+    "hainan.meilangCaption": "Historic remains within a village landscape",
+    "hainan.waterfallTitle": "Nanxuan Waterfall",
+    "hainan.waterfallCaption": "A lesser-known destination in a tropical landscape",
+    "hainan.nanliTitle": "Nanli Lake",
+    "hainan.nanliCaption": "Lake scenery and its surrounding tourism space",
+    "hainan.sketchTitle": "Course travel sketch",
+    "hainan.sketchCaption": "Fragments from the museum, Wenbi Peak, and island travel",
+    "hainan.islandTitle": "Island tourism space",
+    "hainan.islandCaption": "The relationship among facilities, coastlines, and visitor experience",
     "sections.other": "Other digital and creative work",
     "other.hint": "Expand to view digital work and visual experiments",
     "other.stillwater": "A personal learning and visual archive for practicing information structure, web communication, and ongoing maintenance.",
@@ -221,6 +256,13 @@ function applyLanguage(nextLanguage) {
   toggle.querySelector(".language-current").textContent = isEnglish ? "EN" : "中";
   toggle.querySelector(".language-other").textContent = isEnglish ? "中" : "EN";
   toggle.setAttribute("aria-label", isEnglish ? "切换为中文" : "Switch to English");
+  document.querySelectorAll(".hainan-photo").forEach((button) => {
+    const title = dictionary[button.dataset.titleKey] || chinese[button.dataset.titleKey] || "";
+    const caption = dictionary[button.dataset.captionKey] || chinese[button.dataset.captionKey] || "";
+    button.setAttribute("aria-label", isEnglish ? `Open image: ${title}` : `查看大图：${title}`);
+    const image = button.querySelector("img");
+    if (image) image.alt = `${title}。${caption}`;
+  });
   saveLanguage(language);
 }
 
@@ -236,3 +278,32 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, { rootMargin: "-25% 0px -65%", threshold: 0 });
 observedSections.forEach((section) => observer.observe(section));
+
+const lightbox = document.querySelector(".lightbox");
+const lightboxImage = lightbox?.querySelector("img");
+const lightboxTitle = lightbox?.querySelector("figcaption strong");
+const lightboxCaption = lightbox?.querySelector("figcaption span");
+const lightboxClose = lightbox?.querySelector(".lightbox-close");
+
+function currentDictionary() {
+  return language === "en" ? translations.en : chinese;
+}
+
+document.querySelectorAll(".hainan-photo").forEach((button) => {
+  button.addEventListener("click", () => {
+    if (!lightbox || !lightboxImage || !lightboxTitle || !lightboxCaption) return;
+    const dictionary = currentDictionary();
+    const title = dictionary[button.dataset.titleKey] || chinese[button.dataset.titleKey] || "";
+    const caption = dictionary[button.dataset.captionKey] || chinese[button.dataset.captionKey] || "";
+    lightboxImage.src = button.dataset.full;
+    lightboxImage.alt = `${title}。${caption}`;
+    lightboxTitle.textContent = title;
+    lightboxCaption.textContent = caption;
+    lightbox.showModal();
+  });
+});
+
+lightboxClose?.addEventListener("click", () => lightbox.close());
+lightbox?.addEventListener("click", (event) => {
+  if (event.target === lightbox) lightbox.close();
+});
