@@ -7,7 +7,7 @@ const translations = {
     "nav.projects": "Projects",
     "nav.experience": "Experience",
     "nav.snapshots": "Snapshots",
-    "nav.hainan": "Hainan",
+    "nav.hainan": "Photos",
     "profile.discipline": "Tourism development and management",
     "profile.role": "Tourism Development and Management undergraduate",
     "profile.rankLabel": "Program rank",
@@ -35,10 +35,9 @@ const translations = {
     "notice.copied": "Website URL copied",
     "notice.copyFailed": "Press and hold the URL above to copy it",
     "sections.aboutKicker": "About me",
-    "sections.about": "Learning and practice focused on tourism, culture, and communities.",
+    "sections.about": "Education, project practice, and campus experience.",
     "about.p1": "Zixiang Zeng is an undergraduate at the Hainan University–Arizona State University Joint International Tourism College. His Hainan University registered major is Hotel Management (Sino-foreign cooperative program), and his ASU concentration is Tourism Development and Management (TDM).",
     "about.academic": "He currently ranks 7th among 104 students (approximately the top 7%), with 64.36% of course results rated excellent. He received Hainan University's Second-Class Comprehensive Scholarship and was recognized as an Outstanding Student by Jinzhao College.",
-    "about.p2": "His current interests concern the relationships among tourism activities, local culture, and community life. After joining a college island-loop course trip in Fall 2025, he also travelled to different parts of Hainan in his own time and became more familiar with the island's places and scenery.",
     "about.p3": "His RAISE Hub practice focused on prototyping and evaluating an AI learning assistant, while his public-institution internship involved basic data checking, summary writing, and structured records.",
     "about.interestLabel": "Current interests",
     "about.interestCore": "Primary",
@@ -92,8 +91,8 @@ const translations = {
     "evidence.aiBody": "RAISE Hub learning-assistant prototyping, prompt testing, source checking, and human judgment.",
     "evidence.dataTitle": "Data and structured writing",
     "evidence.dataBody": "CDC data checks, document organization, and two monthly work summaries.",
-    "evidence.localTitle": "Local culture and travel experience",
-    "evidence.localBody": "English interpretation at Qilou Old Street, an island-loop course trip, and personal travel across Hainan.",
+    "evidence.localTitle": "English interpretation and cultural communication",
+    "evidence.localBody": "English interpretation training, visitor communication, and on-site Q&A at Qilou Old Street.",
     "evidence.mobilityTitle": "Off-campus mobility",
     "evidence.mobilityBody": "C2 driver's license supporting off-campus visits, project observation, and fieldwork travel.",
     "experience.cdcOrg": "Nanjing Lishui District Center for Disease Control and Prevention",
@@ -182,31 +181,17 @@ const translations = {
     "service.firstAidTitle": "Red Cross first aid and CPR+AED",
     "service.firstAid": "Completed first-aid knowledge and practical training, strengthening step-by-step judgment, collaboration, and response awareness in on-site situations.",
     "sections.recordsKicker": "Field records",
-    "sections.records": "Places where learning, service, and observation took place.",
+    "sections.records": "Places where learning, service, and activities took place.",
     "records.raise": "Web-content prototype and responsible-AI workshops",
     "records.qilouTitle": "Qilou Old Street",
     "records.qilou": "English interpretation and cultural communication",
     "records.ufirst": "Outdoor action session for Nature and the Humanistic Spirit",
     "records.libraryTitle": "Library volunteer service",
     "records.library": "Book organization and shelving session",
-    "hainan.kicker": "Around Hainan",
-    "hainan.title": "A few places I have visited in Hainan.",
-    "hainan.intro": "My first island-loop course trip took place in Fall 2025. Since then, I have also visited a number of Hainan's cities and counties with friends. These photos are simply a record of places I have been and scenery I enjoyed along the way.",
+    "hainan.kicker": "Travel photographs",
+    "hainan.title": "A few photographs.",
     "hainan.expand": "Show photos",
     "hainan.collapse": "Hide photos",
-    "hainan.hint": "Nanli Lake, Meilang Twin Pagodas, Nanxuan Waterfall, and moments from the island-loop course trip",
-    "hainan.coastTitle": "Island-loop course trip",
-    "hainan.coastCaption": "Coastal scenery from the college trip",
-    "hainan.meilangTitle": "Meilang Twin Pagodas, Chengmai",
-    "hainan.meilangCaption": "Twin pagodas and the nearby village on a day trip",
-    "hainan.waterfallTitle": "Nanxuan Waterfall",
-    "hainan.waterfallCaption": "A short trip to the waterfall",
-    "hainan.nanliTitle": "Nanli Lake",
-    "hainan.nanliCaption": "Scenery along the lake",
-    "hainan.sketchTitle": "Course travel sketch",
-    "hainan.sketchCaption": "A sketch kept from the course trip",
-    "hainan.islandTitle": "Island scenery",
-    "hainan.islandCaption": "One stop on the island-loop course trip",
     "sections.other": "Other digital and creative work",
     "other.hint": "Expand to view digital work and visual experiments",
     "other.stillwater": "A personal learning and visual archive for practicing information structure, web communication, and ongoing maintenance.",
@@ -267,11 +252,8 @@ function applyLanguage(nextLanguage) {
   const mobileResume = document.querySelector("[data-mobile-resume]");
   if (mobileResume) mobileResume.href = isEnglish ? "files/Zixiang-Zeng-CV-Public-EN.pdf" : "files/Zixiang-Zeng-CV-Public-ZH.pdf";
   document.querySelectorAll(".hainan-photo").forEach((button) => {
-    const title = dictionary[button.dataset.titleKey] || chinese[button.dataset.titleKey] || "";
-    const caption = dictionary[button.dataset.captionKey] || chinese[button.dataset.captionKey] || "";
-    button.setAttribute("aria-label", isEnglish ? `Open image: ${title}` : `查看大图：${title}`);
     const image = button.querySelector("img");
-    if (image) image.alt = `${title}。${caption}`;
+    button.setAttribute("aria-label", isEnglish ? `Open travel photograph: ${image?.alt || "photograph"}` : `查看旅行照片：${image?.alt || "照片"}`);
   });
   saveLanguage(language);
 }
@@ -302,13 +284,12 @@ function currentDictionary() {
 document.querySelectorAll(".hainan-photo").forEach((button) => {
   button.addEventListener("click", () => {
     if (!lightbox || !lightboxImage || !lightboxTitle || !lightboxCaption) return;
-    const dictionary = currentDictionary();
-    const title = dictionary[button.dataset.titleKey] || chinese[button.dataset.titleKey] || "";
-    const caption = dictionary[button.dataset.captionKey] || chinese[button.dataset.captionKey] || "";
+    const previewImage = button.querySelector("img");
     lightboxImage.src = button.dataset.full;
-    lightboxImage.alt = `${title}。${caption}`;
-    lightboxTitle.textContent = title;
-    lightboxCaption.textContent = caption;
+    lightboxImage.alt = previewImage?.alt || "";
+    lightboxTitle.textContent = "";
+    lightboxCaption.textContent = "";
+    lightbox.querySelector("figcaption")?.setAttribute("hidden", "");
     lightbox.showModal();
   });
 });
